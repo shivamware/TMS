@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trainer Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>TMS</h1>
+
+  <!-- Add Trainer -->
+  <section>
+    <h2>Add Trainer</h2>
+    <form id="addTrainerForm">
+      <input type="text" id="empId" placeholder="Emp ID" required />
+      <input type="text" id="trainerName" placeholder="Trainer Name" required />
+      <button type="submit">Add Trainer</button>
+    </form>
+  </section>
+
+  <!-- Get All Trainers -->
+  <section>
+    <h2>All Trainers</h2>
+    <button onclick="getAllTrainers()">Load Trainers</button>
+    <ul id="trainerList"></ul>
+  </section>
+
+  <!-- Delete Trainer -->
+  <section>
+    <h2>Delete Trainer</h2>
+    <form id="deleteTrainerForm">
+      <input type="text" id="deleteEmpId" placeholder="Emp ID" required />
+      <button type="submit">Delete</button>
+    </form>
+  </section>
+
+  <!-- Get Trainer by ID -->
+  <section>
+    <h2>Trainer by Emp ID</h2>
+    <form id="getTrainerByIdForm">
+      <input type="text" id="getEmpId" placeholder="Emp ID" required />
+      <button type="submit">Search</button>
+    </form>
+    <p id="trainerDetails"></p>
+  </section>
+
+  <!-- Get Trainers by Subject -->
+  <section>
+    <h2>Trainers by Subject</h2>
+    <form id="getTrainersBySubjectForm">
+      <input type="text" id="subjectName" placeholder="Subject Name" required />
+      <button type="submit">Search</button>
+    </form>
+    <ul id="trainersBySubjectList"></ul>
+  </section>
+
+  <!-- Add Subject -->
+  <section>
+    <h2>Add Subject</h2>
+    <form id="addSubjectForm">
+      <input type="text" id="subjectTitle" placeholder="Subject Name" required />
+      <input type="text" id="subjectDesc" placeholder="Description" required />
+      <button type="submit">Add Subject</button>
+    </form>
+  </section>
+
+  <!-- Get All Subjects -->
+  <section>
+    <h2>All Subjects</h2>
+    <button onclick="getAllSubjects()">Load Subjects</button>
+    <ul id="subjectList"></ul>
+  </section>
+
+  <!-- Get Subject with Trainers -->
+  <section>
+    <h2>Subject & Trainers by ID</h2>
+    <form id="getSubjectByIdForm">
+      <input type="number" id="subjectId" placeholder="Subject ID" required />
+      <button type="submit">Search</button>
+    </form>
+    <p id="subjectDetails"></p>
+    <ul id="subjectTrainerList"></ul>
+  </section>
+
+  
+
+  <script src="script.js"></script>
+
+</body>
+</html>
